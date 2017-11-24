@@ -1,5 +1,7 @@
 .App {
+  font-family: 'Scope One', serif;
+  background-color: #D7F1FF;
+  color: #005E89;
   text-align: center;
-  background-color: #222;
   height: 100vh;
 }
