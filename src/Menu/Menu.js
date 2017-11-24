@@ -34,7 +34,7 @@ class Menu extends Component {
   render() {
     return (
       <ul className="Menu">
-        <li><Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>About</Link></li>
+        <li><Link activeClass="active" to="about" spy={true} smooth={true} duration={1000}>About</Link></li>
         <li>Portfolio</li>
         <li>Contact</li>
       </ul>
