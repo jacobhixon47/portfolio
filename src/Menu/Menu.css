@@ -38,3 +38,9 @@ li:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+.active {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}

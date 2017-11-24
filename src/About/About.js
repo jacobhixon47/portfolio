@@ -15,7 +15,7 @@ class About extends Component {
         alignItems: "center"
       }}>
         <div style={{paddingLeft: "100px", marginLeft: "25px", textAlign: "left", maxWidth: "50vw", borderLeft: "2px solid #005E89"}}>
-          <h1 style={{marginTop: 0}}>About</h1>
+          <h1 style={{marginTop: 0}}>I'm a Dreamer</h1>
           <p>Lorem Ipsum i am a whale blah blah blah art development and fun stuff. The Lorem Ipsum i am a whale blah blah blah art development and fun stuff. Then the dog said, "Lorem Ipsum i am a whale blah blah blah art development and fun stuff."</p>
         </div>
       </div>
