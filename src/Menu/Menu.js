@@ -1,22 +1,14 @@
 import React, { Component } from 'react';
 import './Menu.css';
 
-class Menu extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {menuItems: ['Work', 'About', 'Contact']};
-  }
-
-  render() {
-    return (
-      <div className="Menu">
-        <ul>{this.state.menuItems.map((item) =>
-          <li key={item.toString()}>{item}</li>
-        )}
-        </ul>
-      </div>
-    );
-  }
+function Menu(props) {
+  return (
+    <ul className="Menu">
+      <li>About</li>
+      <li>Portfolio</li>
+      <li>Contact</li>
+    </ul>
+  );
 }
 
 export default Menu;
