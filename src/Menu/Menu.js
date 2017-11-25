@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Menu.css';
 import Scroll  from 'react-scroll';
+import {Animated} from "react-animated-css";
 
 let Link = Scroll.Link;
 let scroll = Scroll.animateScroll;

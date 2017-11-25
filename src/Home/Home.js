@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Menu from '../Menu/Menu.js';
+import {Animated} from "react-animated-css";
 import './Home.css';
 
 class Home extends Component {
@@ -56,6 +57,8 @@ class Home extends Component {
             </p>
           </div>
         </div>
+        {/* <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+        </Animated> */}
         <div className="menu" style={{
           transform: `translate(${this.state.currentPosition}%, 0px)`,
           opacity: this.state.menuOpacity,
