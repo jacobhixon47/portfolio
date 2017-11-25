@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import plane from '../images/airplane-art-1.jpg';
-import './About.css';
+import moon from '../images/space-1.jpg';
+import './Contact.css';
 import {Animated} from 'react-animated-css';
 
-class About extends Component {
+class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,13 +12,14 @@ class About extends Component {
       textVisible: false,
       mainColor: '#D7F1FF'
     };
-    this.animateAbout = this.animateAbout.bind(this)
+    this.animateContact = this.animateContact.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this);
   }
 
-  animateAbout() {
+  animateContact() {
     this.setState({
-      headingAnimation: 'slideInLeft',
-      textAnimation: 'slideInLeft'
+      headingAnimation: 'slideInRight',
+      textAnimation: 'slideInRight'
     });
     setTimeout(() => this.setState({
       headingVisible: true
@@ -29,20 +30,27 @@ class About extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.animateAbout);
+    window.addEventListener('scroll', function() {
+      var elementTarget = document.getElementById("contact");
+      if (window.scrollY > elementTarget.offsetTop) {
+        alert("You've scrolled past the second div");
+      }
+    });
   }
 
   render() {
     return (
-      <div className="About" name="about" style={{
+      <div className="Contact" name="contact" id="contact" style={{
+        backgroundColor: '#181B20',
         display: "flex",
-        justifyContent: "flex-start",
+        justifyContent: "flex-end",
         alignItems: "center",
-        backgroundImage: `url(${plane})`,
+        backgroundImage: `url(${moon})`,
+        backgroundRepeat: 'no-repeat',
         color: this.state.mainColor,
         backgroundPosition: "left center"
       }}>
-        <div className="about-text" style={{paddingLeft: "50px", marginLeft: "25px", textAlign: "left", maxWidth: "50vw", display: "hidden"}}>
+        <div className="contact-text" style={{paddingRight: "50px", marginRight: "25px", textAlign: "right", maxWidth: "40vw", display: "hidden", right: '0px'}}>
           <Animated animationIn={this.state.headingAnimation} isVisible={this.state.headingVisible}>
             <h1 style={{marginTop: 0, transition: 'all 1s'}}>I'm a Dreamer</h1>
           </Animated>
@@ -55,4 +63,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Contact;
