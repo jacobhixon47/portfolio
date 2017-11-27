@@ -52,10 +52,13 @@ class Contact extends Component {
       }}>
         <div className="contact-text" style={{paddingRight: "50px", marginRight: "25px", textAlign: "right", maxWidth: "40vw", display: "hidden", right: '0px'}}>
           <Animated animationIn={this.state.headingAnimation} isVisible={this.state.headingVisible}>
-            <h1 style={{marginTop: 0, transition: 'all 1s'}}>I'm a Dreamer</h1>
+            <h1 style={{marginTop: 0, transition: 'all 1s'}}>Contact Me</h1>
           </Animated>
           <Animated animationIn={this.state.textAnimation} isVisible={this.state.textVisible} style={{transition: 'all 1s'}}>
-            <p>Lorem Ipsum i am a whale blah blah blah art development and fun stuff. The Lorem Ipsum i am a whale blah blah blah art development and fun stuff. Then the dog said, "Lorem Ipsum i am a whale blah blah blah art development and fun stuff."</p>
+            <p>Email: jacobhixon47@gmail.com</p>
+            <p>LinkedIn: https://linkedin.com/in/jacobhixon/</p>
+            <p>Phone: 615-123-4567</p>
+
           </Animated>
         </div>
       </div>
