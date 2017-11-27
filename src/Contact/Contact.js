@@ -23,19 +23,19 @@ class Contact extends Component {
     });
     setTimeout(() => this.setState({
       headingVisible: true
-    }), 1000);
+    }), 250);
     setTimeout(() => this.setState({
       textVisible: true
-    }), 2000);
+    }), 1250);
   }
 
   componentDidMount() {
     window.addEventListener('scroll', function() {
       var elementTarget = document.getElementById("contact");
-      if (window.scrollY > elementTarget.offsetTop) {
-        alert("You've scrolled past the second div");
+      if (window.scrollY >= elementTarget.offsetTop  - (elementTarget.offsetTop / 2.2)) {
+        this.animateContact();
       }
-    });
+    }.bind(this));
   }
 
   render() {
