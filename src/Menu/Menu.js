@@ -37,7 +37,7 @@ class Menu extends Component {
       <ul className="Menu">
         <li><Link activeClass="active" to="about" spy={true} smooth={true} duration={1000}>About</Link></li>
         <li>Portfolio</li>
-        <li>Contact</li>
+        <li><Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000}>Contact</Link></li>
       </ul>
     );
   }
