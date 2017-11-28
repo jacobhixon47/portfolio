@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import moon from '../images/space-1.jpg';
+import ContactInfo from '../ContactInfo/ContactInfo.js';
+import email from '../images/email.png';
+import linkedin from '../images/linkedin.png';
+import github from '../images/github.png';
 import './Contact.css';
 import {Animated} from 'react-animated-css';
 
@@ -41,26 +44,20 @@ class Contact extends Component {
   render() {
     return (
       <div className="Contact" name="contact" id="contact" style={{
+        height: "50vh",
+        zIndex: -20,
+        position: "fixed",
+        bottom: 0,
         backgroundColor: '#181B20',
         display: "flex",
-        justifyContent: "flex-end",
+        justifyContent: "space-around",
         alignItems: "center",
-        backgroundImage: `url(${moon})`,
-        backgroundRepeat: 'no-repeat',
-        color: this.state.mainColor,
-        backgroundPosition: "left center"
+        backgroundColor: "#424B60",
+        color: this.state.mainColor
       }}>
-        <div className="contact-text" style={{paddingRight: "50px", marginRight: "25px", textAlign: "right", maxWidth: "40vw", display: "hidden", right: '0px'}}>
-          <Animated animationIn={this.state.headingAnimation} isVisible={this.state.headingVisible}>
-            <h1 style={{marginTop: 0, transition: 'all 1s'}}>Contact Me</h1>
-          </Animated>
-          <Animated animationIn={this.state.textAnimation} isVisible={this.state.textVisible} style={{transition: 'all 1s'}}>
-            <p>Email: jacobhixon47@gmail.com</p>
-            <p>LinkedIn: https://linkedin.com/in/jacobhixon/</p>
-            <p>Phone: 615-123-4567</p>
-
-          </Animated>
-        </div>
+        <ContactInfo src={linkedin} text="LinkedIn" />
+        <ContactInfo src={github} text="Github" />
+        <ContactInfo src={email} text="Email" />
       </div>
     );
   }

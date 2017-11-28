@@ -7,17 +7,12 @@ let Link = Scroll.Link;
 let scroll = Scroll.animateScroll;
 var Events = Scroll.Events;
 let scrollSpy = Scroll.scrollSpy;
-// let DirectLink = Scroll.DirectLink;
-// let Element = Scroll.Element;
-// let Events = Scroll.Events;
-// let scroller = Scroll.scroller;
 
 class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
       position: "fixed"
-
     }
   }
 
