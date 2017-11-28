@@ -21,7 +21,7 @@ class Portfolio extends Component {
         width: "100vw",
         display: "flex",
         flexWrap: "wrap",
-        justifyContent: "space-between",
+        justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#D7F1FF",
         backgroundImage: `url(${dev})`,
@@ -33,9 +33,6 @@ class Portfolio extends Component {
         <Project text="TeamGo"/>
         <Project text="uBudget"/>
         <Project text="BrightSky"/>
-        <Project text="number 4"/>
-        <Project text="number 5"/>
-        <Project text="number 6"/>
       </div>
     );
   }

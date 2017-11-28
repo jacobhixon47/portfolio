@@ -12,12 +12,16 @@ class Project extends Component {
   render() {
     return (
       <div className="project" style={{
-        width: "33.2vw",
-        height: "49.5vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100vw",
+        height: "33.3vh"
       }}>
         <h1 className="title">{this.state.text}</h1>
+        <div class="button"><a href="#">BUTTON</a></div>
         <div className="overlay"></div>
-        <div class="button"><a href="#"> BUTTON </a></div>
       </div>
     );
   }
