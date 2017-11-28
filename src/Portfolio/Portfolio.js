@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import dev from '../images/dev-art-1.jpg';
 import {Animated} from 'react-animated-css';
 import Project from '../Project/Project.js';
+import '../Project/Project.css';
 
 class Portfolio extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class Portfolio extends Component {
         width: "100vw",
         display: "flex",
         flexWrap: "wrap",
-        justifyContent: "center",
+        justifyContent: "space-between",
         alignItems: "center",
         backgroundColor: "#D7F1FF",
         backgroundImage: `url(${dev})`,
@@ -29,20 +30,12 @@ class Portfolio extends Component {
         backgroundPosition: "center",
         marginBottom: "49vh",
       }}>
-        <div className="overlay" style={{
-          width: "100%",
-          height: "100%",
-          position: "absolute",
-          backgroundColor: "#000",
-          opacity: 0.5
-        }}>
-        </div>
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        <Project text="TeamGo"/>
+        <Project text="uBudget"/>
+        <Project text="BrightSky"/>
+        <Project text="number 4"/>
+        <Project text="number 5"/>
+        <Project text="number 6"/>
       </div>
     );
   }

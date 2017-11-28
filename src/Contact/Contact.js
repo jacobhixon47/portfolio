@@ -45,6 +45,7 @@ class Contact extends Component {
     return (
       <div className="Contact" name="contact" id="contact" style={{
         height: "50vh",
+        width: "100vw",
         zIndex: -20,
         position: "fixed",
         bottom: 0,
@@ -55,9 +56,9 @@ class Contact extends Component {
         backgroundColor: "#424B60",
         color: this.state.mainColor
       }}>
-        <ContactInfo src={linkedin} text="LinkedIn" />
-        <ContactInfo src={github} text="Github" />
-        <ContactInfo src={email} text="Email" />
+        <ContactInfo source={linkedin} text="LinkedIn" url="https://linkedin.com/in/jacobhixon/"/>
+        <ContactInfo source={github} text="Github" url="https://github.com/jacobhixon47"/>
+        <ContactInfo source={email} text="jacobhixon47@gmail.com"/>
       </div>
     );
   }

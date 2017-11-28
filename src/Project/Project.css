@@ -1,0 +1,42 @@
+.project {
+  transition: all 0.3s ease-in;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.project:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.title {
+  margin-top: 35%;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.project:hover .title {
+  margin-top: 20%;
+}
+
+.button {
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button a {
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.container:hover .button {
+  opacity: 1;
+}
