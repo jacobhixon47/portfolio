@@ -32,7 +32,7 @@ class Contact extends Component {
   componentDidMount() {
     window.addEventListener('scroll', function() {
       var elementTarget = document.getElementById("contact");
-      if (window.scrollY >= elementTarget.offsetTop  - (elementTarget.offsetTop / 2.2)) {
+      if (window.scrollY >= elementTarget.offsetTop - 100) {
         this.animateContact();
       }
     }.bind(this));

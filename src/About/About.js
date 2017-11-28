@@ -33,7 +33,7 @@ class About extends Component {
   componentDidMount() {
     window.addEventListener('scroll', function() {
       var elementTarget = document.getElementById("about");
-      if (window.scrollY >= elementTarget.offsetTop - (elementTarget.offsetTop / 2.2)) {
+      if (window.scrollY >= elementTarget.offsetTop - 100) {
         this.animateAbout();
       }
     }.bind(this));

@@ -15,6 +15,10 @@ let scrollSpy = Scroll.scrollSpy;
 class Menu extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      position: "fixed"
+
+    }
   }
 
   componentDidMount() {
@@ -25,6 +29,12 @@ class Menu extends Component {
       console.log("end", arguments);
     });
     scrollSpy.update();
+    window.addEventListener('scroll', function() {
+      var elementTarget = document.getElementById("menu");
+      if (window.scrollY >= elementTarget.offsetTop) {
+
+      }
+    }.bind(this));
   }
 
   componentWillUnmount() {
@@ -34,9 +44,20 @@ class Menu extends Component {
 
   render() {
     return (
-      <ul className="Menu">
+      <ul className="Menu" id="menu" style={{
+        width: "100vw",
+        height: "10vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        color: "#D7F1FF",
+        listStyle: "none",
+        margin: 0,
+        marginTop: "10px",
+        transition: "all 1s ease-in"
+      }}>
         <li><Link activeClass="active" to="about" spy={true} smooth={true} duration={1000}>About</Link></li>
-        <li>Portfolio</li>
+        <li><Link activeClass="active" to="portfolio" spy={true} smooth={true} duration={1000}>Portfolio</Link></li>
         <li><Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000}>Contact</Link></li>
       </ul>
     );
