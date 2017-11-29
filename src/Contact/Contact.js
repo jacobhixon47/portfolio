@@ -15,30 +15,6 @@ class Contact extends Component {
       textVisible: false,
       mainColor: '#D7F1FF'
     };
-    this.animateContact = this.animateContact.bind(this);
-    this.componentDidMount = this.componentDidMount.bind(this);
-  }
-
-  animateContact() {
-    this.setState({
-      headingAnimation: 'slideInRight',
-      textAnimation: 'slideInRight'
-    });
-    setTimeout(() => this.setState({
-      headingVisible: true
-    }), 250);
-    setTimeout(() => this.setState({
-      textVisible: true
-    }), 1250);
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', function() {
-      var elementTarget = document.getElementById("contact");
-      if (window.scrollY >= elementTarget.offsetTop - 100) {
-        this.animateContact();
-      }
-    }.bind(this));
   }
 
   render() {
@@ -54,7 +30,8 @@ class Contact extends Component {
         justifyContent: "space-around",
         alignItems: "center",
         backgroundColor: "#424B60",
-        color: this.state.mainColor
+        color: this.state.mainColor,
+        paddingLeft: "20px"
       }}>
         <ContactInfo source={linkedin} text="LinkedIn" url="https://linkedin.com/in/jacobhixon/"/>
         <ContactInfo source={github} text="Github" url="https://github.com/jacobhixon47"/>

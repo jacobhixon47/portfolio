@@ -3,10 +3,11 @@ import {Animated} from 'react-animated-css';
 
 const ContactInfo = (props) => {
   return (
-    <div className="contactInfo" >
+    <div className="ContactInfo">
       <a href={props.url} target="_blank" style={{
         textDecoration: "none",
-      color: "#D7F1FF"}}>
+        color: "#D7F1FF"
+      }}>
         <img src={props.source}  style={{
           width: "10vw"
         }}/>

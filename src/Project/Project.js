@@ -17,9 +17,18 @@ class Project extends Component {
         justifyContent: "center",
         alignItems: "center",
         width: "100vw",
-        height: "33.3vh"
+        height: "33.3vh",
+        transition: "all 0.3s ease-in",
+        backgroundColor: "#000"
       }}>
-        <h1 className="title">{this.state.text}</h1>
+        <h1 className="title" style={{
+          fontWeight: 700,
+          textAlign: "center",
+          textTransform: "uppercase",
+          color: "white",
+          zIndex: 3,
+          transition: "all 0.3s ease"
+        }}>{this.state.text}</h1>
         <div class="button" style={{
           textAlign: "center",
           opacity: 0,
@@ -32,7 +41,6 @@ class Project extends Component {
           border: "solid 2px white",
           zIndex: 1
         }}>BUTTON</a></div>
-        <div className="overlay"></div>
       </div>
     );
   }
