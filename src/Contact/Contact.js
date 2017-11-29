@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ContactInfo from '../ContactInfo/ContactInfo.js';
-import email from '../images/email.png';
+import google from '../images/google.png';
 import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
 import './Contact.css';
@@ -30,12 +30,11 @@ class Contact extends Component {
         justifyContent: "space-around",
         alignItems: "center",
         backgroundColor: "#424B60",
-        color: this.state.mainColor,
-        paddingLeft: "20px"
+        color: this.state.mainColor
       }}>
         <ContactInfo source={linkedin} text="LinkedIn" url="https://linkedin.com/in/jacobhixon/"/>
         <ContactInfo source={github} text="Github" url="https://github.com/jacobhixon47"/>
-        <ContactInfo source={email} text="jacobhixon47@gmail.com"/>
+        <ContactInfo source={google} text="jacobhixon47"/>
       </div>
     );
   }
