@@ -20,7 +20,18 @@ class Project extends Component {
         height: "33.3vh"
       }}>
         <h1 className="title">{this.state.text}</h1>
-        <div class="button"><a href="#">BUTTON</a></div>
+        <div class="button" style={{
+          textAlign: "center",
+          opacity: 0,
+          transition: "opacity .35s ease",
+          zIndex: 1
+        }}><a href="#" style={{
+          padding: "10% 30% 10% 30%",
+          textAlign: "center",
+          color: "white",
+          border: "solid 2px white",
+          zIndex: 1
+        }}>BUTTON</a></div>
         <div className="overlay"></div>
       </div>
     );

@@ -32,6 +32,16 @@ class Menu extends Component {
     }.bind(this));
   }
 
+  handleContactClick() {
+    console.log("this works;");
+    window.scrollBy({
+      top: document.body.scrollHeight, // could be negative value
+      left: 0,
+      behavior: 'smooth'
+    });
+
+  }
+
   componentWillUnmount() {
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
@@ -53,7 +63,7 @@ class Menu extends Component {
       }}>
         <li><Link activeClass="active" to="about" spy={true} smooth={true} duration={1000}>About</Link></li>
         <li><Link activeClass="active" to="portfolio" spy={true} smooth={true} duration={1000}>Portfolio</Link></li>
-        <li><Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000}>Contact</Link></li>
+        <li onClick={this.handleContactClick}>Contact</li>
       </ul>
     );
   }

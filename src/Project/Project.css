@@ -22,21 +22,6 @@
   margin-top: -20px;
 }
 
-.button {
-  text-align: center;
-  opacity: 0;
-  transition: opacity .35s ease;
-  z-index: 1;
-}
-
-.button a {
-  padding: 10% 30% 10% 30%;
-  text-align: center;
-  color: white;
-  border: solid 2px white;
-  z-index: 1;
-}
-
 .project:hover .button {
   opacity: 1;
   transition: all 0.35s ease;
