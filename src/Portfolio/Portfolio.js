@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import dev from '../images/dev-art-1.jpg';
+import horizon from '../images/horizon.png';
 import {Animated} from 'react-animated-css';
 import Project from '../Project/Project.js';
 import '../Project/Project.css';
@@ -30,9 +31,9 @@ class Portfolio extends Component {
         backgroundPosition: "center",
         marginBottom: "49vh",
       }}>
-        <Project text="TeamGo"/>
-        <Project text="uBudget"/>
-        <Project text="BrightSky"/>
+        <Project text="TeamGo" description="Rails, Javascript"/>
+        <Project text="uBudget" description="Rails, Javascript"/>
+        <Project text="BrightSky" description="Ruby/Sinatra"/>
       </div>
     );
   }

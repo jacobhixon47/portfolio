@@ -4,7 +4,9 @@
 
 .project:hover {
   opacity: 0.8;
-  cursor: pointer;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -12,16 +14,18 @@
   text-align: center;
   text-transform: uppercase;
   color: white;
+  opacity: 1;
   z-index: 3;
   transition: all 0.3s ease;
 }
 
 .link {
+  background-color: #000;
   opacity: 0;
 }
 
 .project:hover .title {
-  margin-top: -20px;
+  margin-bottom: 40px;
 }
 
 .project:hover .link {
