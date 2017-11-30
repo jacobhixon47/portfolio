@@ -13,6 +13,7 @@ class Project extends Component {
     return (
       <div className="project" style={{
         display: "flex",
+        textAlign: "center",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
@@ -29,18 +30,14 @@ class Project extends Component {
           zIndex: 3,
           transition: "all 0.3s ease"
         }}>{this.state.text}</h1>
-        <div class="button" style={{
-          textAlign: "center",
-          opacity: 0,
-          transition: "opacity .35s ease",
-          zIndex: 1
-        }}><a href="#" style={{
-          padding: "10% 30% 10% 30%",
+        <a href="#" className="link" style={{
+          padding: "1% 3% 1% 3%",
           textAlign: "center",
           color: "white",
           border: "solid 2px white",
-          zIndex: 1
-        }}>BUTTON</a></div>
+          zIndex: 1,
+          transition: "opacity 0.3s ease-in",
+        }}>BUTTON</a>
       </div>
     );
   }

@@ -63,7 +63,7 @@ class Menu extends Component {
       }}>
         <li><Link activeClass="active" to="about" spy={true} smooth={true} duration={1000}>About</Link></li>
         <li><Link activeClass="active" to="portfolio" spy={true} smooth={true} duration={1000}>Portfolio</Link></li>
-        <li onClick={this.handleContactClick}>Contact</li>
+        <li onClick={this.handleContactClick} style={{margin: 0}}>Contact</li>
       </ul>
     );
   }

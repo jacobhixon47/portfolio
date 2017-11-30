@@ -46,6 +46,7 @@ class About extends Component {
         justifyContent: "flex-start",
         alignItems: "center",
         backgroundImage: `url(${plane})`,
+        backgroundRepeat: "no-repeat",
         color: this.state.mainColor,
         backgroundPosition: "left center"
       }}>

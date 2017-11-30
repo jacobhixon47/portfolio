@@ -16,11 +16,14 @@
   transition: all 0.3s ease;
 }
 
+.link {
+  opacity: 0;
+}
+
 .project:hover .title {
   margin-top: -20px;
 }
 
-.project:hover .button {
+.project:hover .link {
   opacity: 1;
-  transition: all 0.35s ease;
 }
